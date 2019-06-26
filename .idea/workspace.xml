@@ -2,28 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c6db16-0274-477c-9a88-052cf52ca6cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.body" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.body" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.header" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.header" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.senderseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.senderseqnums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.targetseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.targetseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.session" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.body" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.body" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.header" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.header" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.senderseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.senderseqnums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.targetseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.targetseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.session" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.2-server-client.body" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.2-server-client.event.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.2-server-client.header" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.2-server-client.messages.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.2-server-client.senderseqnums" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.2-server-client.session" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.2-server-client.targetseqnums" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.3-server-client.body" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.3-server-client.event.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.3-server-client.header" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.3-server-client.messages.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.3-server-client.senderseqnums" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.3-server-client.session" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/messages/FIX.4.3-server-client.targetseqnums" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.body" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.body" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.header" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.header" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.senderseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.senderseqnums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.targetseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.targetseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.session" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.body" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.body" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.header" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.header" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.senderseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.senderseqnums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.targetseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.targetseqnums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.session" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/fix.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClientApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/b3/server/FixApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/b3/server/FixServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+            <state relative-caret-position="697">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,50 +146,6 @@
             <path>
               <item name="fix" type="b2602c69:ProjectViewProjectNode" />
               <item name="fix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="b3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="b3" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="b3" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,7 +256,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.20948827" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20948827" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.3726977" />
@@ -297,7 +264,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.31744313" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.31744313" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49946696" weight="0.39328277" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -1098,8 +1065,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        <state relative-caret-position="697">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
