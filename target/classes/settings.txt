@@ -1,0 +1,27 @@
+[default]
+ConnectionType=acceptor
+ApplicationID=server
+FileStorePath=storage/server/messages/
+FileLogPath=log/server/messages/
+StartTime=00:01:00 Europe/Bucharest
+EndTime=23:59:00 Europe/Bucharest
+HeartBtInt=30
+UseDataDictionary=Y
+DataDictionary=FIX42.xml
+ValidateUserDefinedFields=N
+ValidateIncomingMessage=N
+RefreshOnLogon=Y
+
+[session]
+BeginString=FIX.4.2
+SocketAcceptPort=8877
+SenderCompID=server
+TargetCompID=client
+AcceptorTemplate=N
+
+[session]
+BeginString=FIX.4.3
+SocketAcceptPort=8878
+SenderCompID=server
+TargetCompID=client
+AcceptorTemplate=N
