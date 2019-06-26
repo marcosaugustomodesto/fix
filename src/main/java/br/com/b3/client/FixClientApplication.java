@@ -1,29 +1,33 @@
 package br.com.b3.client;
 
 import quickfix.*;
-import quickfix.field.ClOrdID;
-import quickfix.field.OrdType;
-import quickfix.field.Side;
-import quickfix.field.TransactTime;
 import quickfix.fix44.NewOrderSingle;
 
-import java.time.LocalDateTime;
-
 public class FixClientApplication implements Application {
+
+    private NewOrderSingle newOrder;
+
+    public NewOrderSingle getNewOrder() {
+        return newOrder;
+    }
+
+    public void setNewOrder(NewOrderSingle newOrder) {
+        this.newOrder = newOrder;
+    }
+
     public void onCreate(SessionID sessionID) {
         System.err.println("onCreate - sessionId:" + sessionID);
     }
 
     public void onLogon(SessionID sessionID) {
-        final String orderId = "12";
-        System.err.println("onLogon - sessionId:" + sessionID);
-        LocalDateTime local = LocalDateTime.now();
-        NewOrderSingle newOrder = new NewOrderSingle(new ClOrdID(orderId), new Side(Side.BUY), new TransactTime(local), new OrdType(OrdType.MARKET));
-        try {
-            Session.sendToTarget(newOrder, sessionID);
-        } catch (SessionNotFound sessionNotFound) {
-            sessionNotFound.printStackTrace();
-        }
+       System.err.println("onLogon - sessionId:" + sessionID);
+       if(newOrder!=null) {
+           try {
+               Session.sendToTarget(newOrder, sessionID);
+           } catch (SessionNotFound sessionNotFound) {
+               sessionNotFound.printStackTrace();
+           }
+       }
     }
 
     public void onLogout(SessionID sessionID) {

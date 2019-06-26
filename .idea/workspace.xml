@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09c6db16-0274-477c-9a88-052cf52ca6cb" name="Default Changelist" comment="" />
+    <list default="true" id="09c6db16-0274-477c-9a88-052cf52ca6cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.body" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.body" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.header" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.header" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.senderseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.senderseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.targetseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.2-client-server.targetseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.body" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.body" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.header" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.header" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.senderseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.senderseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.targetseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/client/messages/FIX.4.3-client-server.targetseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.body" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.body" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.header" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.header" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.senderseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.senderseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.targetseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.2-server-client.targetseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.body" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.body" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.header" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.header" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.senderseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.senderseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.targetseqnums" beforeDir="false" afterPath="$PROJECT_DIR$/storage/server/messages/FIX.4.3-server-client.targetseqnums" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/b3/client/FixClientApplication.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="50" />
+            <state relative-caret-position="361">
+              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,64 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="391">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#152#153#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-all/2.1.1/quickfixj-all-2.1.1-sources.jar!/quickfix/Session.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="1204" selection-start-line="1204" selection-end-line="1204" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-all/2.1.1/quickfixj-all-2.1.1-sources.jar!/quickfix/mina/SingleThreadedEventHandlingStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/server/FixApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-all/2.1.1/quickfixj-all-2.1.1-sources.jar!/quickfix/MessageCracker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="141" selection-start-line="141" selection-end-line="141" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/server/FixServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -111,6 +91,9 @@
       <replace>err</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -123,9 +106,15 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/OrderTIF.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/TwoWayMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/b3/server/FixApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Mail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Observer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/PostOfficce.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java" />
       </list>
     </option>
   </component>
@@ -134,6 +123,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -199,6 +189,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FIX_ADRIANO/B3Client" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -206,14 +197,14 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\msmd\Documents\bolsa\fix\src\main\java\br\com\b3\client" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.b3.client" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.b3.client" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="br.com.b3.client" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\msmd\Documents\bolsa\fix\src\main\java\br\com\b3\client" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -228,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FixClient">
+  <component name="RunManager" selected="Application.FixServer">
     <configuration name="FixClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.b3.client.FixClient" />
       <module name="fix" />
@@ -255,10 +246,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.b3.client.observer.Main" />
+      <module name="fix" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.b3.client.observer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FixClient" />
         <item itemvalue="Application.FixServer" />
+        <item itemvalue="Application.FixClient" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -277,13 +282,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20948827" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.20948827" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.3726977" />
@@ -291,8 +297,8 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.42903575" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49946696" visible="true" weight="0.51570964" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.31744313" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49946696" weight="0.39328277" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -323,13 +329,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java</url>
-          <line>49</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java</url>
-          <line>44</line>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -341,9 +347,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java</url>
-          <line>37</line>
+          <line>18</line>
           <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Main.java</url>
+          <line>3</line>
+          <properties class="br.com.b3.client.observer.Main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -935,16 +955,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/OrderType.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/OrderSide.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/OrderType.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/OrderSide.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-all/2.1.1/quickfixj-all-2.1.1.jar!/quickfix/Session.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -966,48 +978,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-          <folding>
-            <element signature="e#2869#2870#0" expanded="true" />
-            <element signature="e#2901#2902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/OrderTIF.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/TwoWayMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/server/FixServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/Order.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/OrderTIF.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/TwoWayMap.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-all/2.1.1/quickfixj-all-2.1.1-sources.jar!/quickfix/MessageCracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/server/FixApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1025,24 +1002,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/server/FixServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="50" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/server/FixApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Mail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#109#110#0" expanded="true" />
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/PostOfficce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/observer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="391">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/b3/client/FixClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
