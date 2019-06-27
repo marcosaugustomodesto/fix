@@ -1,18 +1,31 @@
 package br.com.b3.client;
 
+import br.com.b3.client.observer.Observer;
 import quickfix.*;
 import quickfix.fix44.NewOrderSingle;
 
-public class FixClientApplication implements Application {
+public class FixClientApplication implements Application, Observer {
 
     private NewOrderSingle newOrder;
+    private FixClient fixClient;
 
-    public NewOrderSingle getNewOrder() {
-        return newOrder;
+    private SessionID sessionID;
+
+    public FixClientApplication(FixClient fixClient) {
+        this.fixClient = fixClient;
+        this.fixClient.registerObserver(this);
     }
 
-    public void setNewOrder(NewOrderSingle newOrder) {
-        this.newOrder = newOrder;
+    public void send(){
+        System.err.println("send - sessionId:" + sessionID);
+        if(newOrder!=null && sessionID != null) {
+            try {
+                Session.sendToTarget(newOrder, sessionID);
+                newOrder = null;
+            } catch (SessionNotFound sessionNotFound) {
+                sessionNotFound.printStackTrace();
+            }
+        }
     }
 
     public void onCreate(SessionID sessionID) {
@@ -20,14 +33,7 @@ public class FixClientApplication implements Application {
     }
 
     public void onLogon(SessionID sessionID) {
-       System.err.println("onLogon - sessionId:" + sessionID);
-       if(newOrder!=null) {
-           try {
-               Session.sendToTarget(newOrder, sessionID);
-           } catch (SessionNotFound sessionNotFound) {
-               sessionNotFound.printStackTrace();
-           }
-       }
+       this.sessionID = sessionID;
     }
 
     public void onLogout(SessionID sessionID) {
@@ -52,5 +58,12 @@ public class FixClientApplication implements Application {
     public void fromApp(Message message, SessionID sessionID) throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType {
         System.err.println("fromApp - sessionId:" + sessionID);
         System.err.println("fromApp - message" + message);
+    }
+
+
+    @Override
+    public void update(NewOrderSingle newOrder) {
+        this.newOrder = newOrder;
+        send();
     }
 }
