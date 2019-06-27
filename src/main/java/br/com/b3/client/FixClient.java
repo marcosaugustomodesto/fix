@@ -1,7 +1,5 @@
 package br.com.b3.client;
 
-import br.com.b3.client.observer.Observable;
-import br.com.b3.client.observer.Observer;
 import quickfix.*;
 import quickfix.field.ClOrdID;
 import quickfix.field.OrdType;
@@ -15,9 +13,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Observable;
+import java.util.Observer;
 
-public class FixClient implements Observable {
+public class FixClient extends Observable {
 
     private static SessionID sessionID;
 
@@ -30,6 +29,7 @@ public class FixClient implements Observable {
     private NewOrderSingle newOrder;
 
     public void newOrderSingleChanged(){
+        setChanged();
         notifyObservers();
     }
 
@@ -38,26 +38,8 @@ public class FixClient implements Observable {
         newOrderSingleChanged();
     }
 
-    @Override
-    public void registerObserver(Observer observer) {
-        if(observer!=null)
-            this.observers.add(observer);
-    }
-
-    @Override
-    public void notifyObservers() {
-        Iterator<Observer> it = observers.iterator();
-        while(it.hasNext()){
-            Observer observer = it.next();
-            observer.update(newOrder);
-        }
-    }
-
-    @Override
-    public void removeObserver(Observer observer) {
-        if(observer!=null)
-            this.observers.remove(observer);
-
+    public NewOrderSingle getNewOrder() {
+        return newOrder;
     }
 
     public static void main(String[] args) throws Exception {
