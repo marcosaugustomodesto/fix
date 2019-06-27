@@ -1,8 +1,10 @@
 package br.com.b3.client;
 
-import br.com.b3.client.observer.Observer;
 import quickfix.*;
 import quickfix.fix44.NewOrderSingle;
+
+import java.util.Observable;
+import java.util.Observer;
 
 public class FixClientApplication implements Application, Observer {
 
@@ -11,9 +13,9 @@ public class FixClientApplication implements Application, Observer {
 
     private SessionID sessionID;
 
-    public FixClientApplication(FixClient fixClient) {
-        this.fixClient = fixClient;
-        this.fixClient.registerObserver(this);
+    public FixClientApplication(Observable fixClient) {
+        this.fixClient = (FixClient) fixClient;
+        this.fixClient.addObserver(this);
     }
 
     public void send(){
@@ -62,8 +64,11 @@ public class FixClientApplication implements Application, Observer {
 
 
     @Override
-    public void update(NewOrderSingle newOrder) {
-        this.newOrder = newOrder;
-        send();
+    public void update(Observable o, Object arg) {
+        if(o instanceof FixClient){
+            FixClient fc = (FixClient) o;
+            this.newOrder = fc.getNewOrder();
+            send();
+        }
     }
 }
