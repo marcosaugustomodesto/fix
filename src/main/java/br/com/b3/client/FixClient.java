@@ -12,72 +12,29 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.Observable;
-import java.util.Observer;
 
-public class FixClient extends Observable {
+public class FixClient extends Observable implements  ActionListener{
 
     private static SessionID sessionID;
 
-    private ArrayList<Observer> observers;
+    private MessageSingleSubject mss = new MessageSingleSubject();
 
-    public FixClient() {
-        observers = new ArrayList<Observer>();
-    }
-
-    private NewOrderSingle newOrder;
-
-    public void newOrderSingleChanged(){
-        setChanged();
-        notifyObservers();
-    }
-
-    public void setNewOrder(NewOrderSingle newOrder) {
-        this.newOrder = newOrder;
-        newOrderSingleChanged();
-    }
-
-    public NewOrderSingle getNewOrder() {
-        return newOrder;
-    }
+    private JFrame frame;
+    private JPanel panel;
+    private JLabel lblOrderId;
+    private JTextField txtOrderId;
+    private JButton btnSubmit;
 
     public static void main(String[] args) throws Exception {
+        new FixClient().init();
+    }
 
+    private void init() throws ConfigError {
         SessionSettings settings = new SessionSettings("client.txt");
-        FixClient fc = new FixClient();
-        Application app = new FixClientApplication(fc);
+        Application app = new FixClientApplication(mss);
 
-//        final String orderId = "12";
-//        NewOrderSingle newOrder = new NewOrderSingle(new ClOrdID(orderId), new Side(Side.BUY), new TransactTime( LocalDateTime.now()), new OrdType(OrdType.MARKET));
-//        fc.setNewOrder(newOrder);
-
-
-        JFrame frame = new JFrame();
-        frame.setLayout(new BorderLayout());
-        frame.setSize(new Dimension(600,400));
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(1,4,5,5));
-        JLabel lblOrderId = new JLabel("OrderId:");
-        JTextField txtOrderId = new JTextField();
-        JButton btnSubmit = new JButton("Submit");
-        btnSubmit.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                NewOrderSingle newOrder = new NewOrderSingle(new ClOrdID(txtOrderId.getText()), new Side(Side.BUY), new TransactTime( LocalDateTime.now()), new OrdType(OrdType.MARKET));
-                fc.setNewOrder(newOrder);
-
-            }
-        });
-
-        panel.add(lblOrderId,0,0);
-        panel.add(txtOrderId,0,1);
-        panel.add(btnSubmit,0,2);
-        frame.add(panel, BorderLayout.NORTH);
-
-        frame.setVisible(true);
-
+        screenInit();
 
         MessageStoreFactory storeFactory = new FileStoreFactory(settings);
         LogFactory logFactory = new ScreenLogFactory(true, true, true);
@@ -85,9 +42,32 @@ public class FixClient extends Observable {
 
         Initiator init = new SocketInitiator(app, storeFactory, settings, messageFactory);
         init.start();
+    }
 
+    private void screenInit() {
+        this.frame = new JFrame();
+        frame.setLayout(new BorderLayout());
+        frame.setSize(new Dimension(600,400));
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        panel = new JPanel();
+        panel.setLayout(new GridLayout(1,4,5,5));
+        lblOrderId = new JLabel("OrderId:");
+        txtOrderId = new JTextField();
+        btnSubmit = new JButton("Submit");
+        btnSubmit.addActionListener(this);
 
+        panel.add(lblOrderId,0,0);
+        panel.add(txtOrderId,0,1);
+        panel.add(btnSubmit,0,2);
+        frame.add(panel, BorderLayout.NORTH);
 
+        frame.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        NewOrderSingle newOrder = new NewOrderSingle(new ClOrdID(txtOrderId.getText()), new Side(Side.BUY), new TransactTime( LocalDateTime.now()), new OrdType(OrdType.MARKET));
+        mss.setNewOrder(newOrder);
     }
 
 }

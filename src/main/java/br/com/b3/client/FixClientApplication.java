@@ -9,13 +9,13 @@ import java.util.Observer;
 public class FixClientApplication implements Application, Observer {
 
     private NewOrderSingle newOrder;
-    private FixClient fixClient;
+    private MessageSingleSubject messageSingleSubject;
 
     private SessionID sessionID;
 
     public FixClientApplication(Observable fixClient) {
-        this.fixClient = (FixClient) fixClient;
-        this.fixClient.addObserver(this);
+        this.messageSingleSubject = (MessageSingleSubject) fixClient;
+        this.messageSingleSubject.addObserver(this);
     }
 
     public void send(){
@@ -65,9 +65,9 @@ public class FixClientApplication implements Application, Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        if(o instanceof FixClient){
-            FixClient fc = (FixClient) o;
-            this.newOrder = fc.getNewOrder();
+        if(o instanceof MessageSingleSubject){
+            MessageSingleSubject mss = (MessageSingleSubject) o;
+            this.newOrder = mss.getNewOrder();
             send();
         }
     }
