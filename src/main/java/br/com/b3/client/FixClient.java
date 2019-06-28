@@ -23,15 +23,16 @@ public class FixClient extends Observable implements  ActionListener{
     private JTextField txtOrderId;
     private JRadioButton rbSingle;
     private JRadioButton rbCross;
-
+    private JButton btnSubmit;
     private Application app;
     public static void main(String[] args) throws Exception {
         new FixClient().init();
     }
 
-    private void init() throws ConfigError {
+    private void init() throws ConfigError, InterruptedException {
         SessionSettings settings = new SessionSettings("client.txt");
-        app = new FixClientApplication(mss);
+        //app = new FixClientApplication(mss);
+        app = new FixClientApplication();
 
         screenInit();
 
@@ -41,6 +42,11 @@ public class FixClient extends Observable implements  ActionListener{
 
         Initiator init = new SocketInitiator(app, storeFactory, settings, messageFactory);
         init.start();
+
+        while(init.getSessions() == null){
+            Thread.sleep(1000);
+        }
+        btnSubmit.setEnabled(true);
     }
 
     private void screenInit() {
@@ -52,7 +58,9 @@ public class FixClient extends Observable implements  ActionListener{
         panel.setLayout(new GridLayout(1,5,5,5));
         JLabel lblOrderId = new JLabel("OrderId:");
         txtOrderId = new JTextField();
-        JButton btnSubmit = new JButton("Submit");
+        btnSubmit = new JButton("Submit");
+        btnSubmit.setEnabled(false);
+
         btnSubmit.addActionListener(this);
         rbSingle = new JRadioButton("Single", true);
         rbCross = new JRadioButton("Cross");
@@ -68,13 +76,17 @@ public class FixClient extends Observable implements  ActionListener{
         frame.add(panel, BorderLayout.NORTH);
 
         frame.setVisible(true);
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if(rbSingle.isSelected()){
             ((FixClientApplication) app).setMessageSingleSubject(mss);
-            NewOrderSingle newOrder = new NewOrderSingle(new ClOrdID(txtOrderId.getText()), new Side(Side.BUY), new TransactTime( LocalDateTime.now()), new OrdType(OrdType.MARKET));
+            NewOrderSingle newOrder = new NewOrderSingle(new ClOrdID(txtOrderId.getText()),
+                    new Side(Side.BUY),
+                    new TransactTime( LocalDateTime.now()),
+                    new OrdType(OrdType.MARKET));
             mss.setNewOrder(newOrder);
         } else if (rbCross.isSelected()){
             ((FixClientApplication) app).setMessageCrossSubject(mcs);
