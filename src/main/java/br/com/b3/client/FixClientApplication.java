@@ -17,6 +17,9 @@ public class FixClientApplication implements Application, Observer {
 
     private SessionID sessionID;
 
+    public FixClientApplication() {
+    }
+
     public FixClientApplication(Observable observable) {
         if (observable instanceof MessageSingleSubject) {
             this.messageSingleSubject = (MessageSingleSubject) observable;
