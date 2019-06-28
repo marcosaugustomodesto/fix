@@ -1,6 +1,7 @@
 package br.com.b3.client;
 
 import quickfix.*;
+import quickfix.fix44.NewOrderCross;
 import quickfix.fix44.NewOrderSingle;
 
 import java.util.Observable;
@@ -9,18 +10,37 @@ import java.util.Observer;
 public class FixClientApplication implements Application, Observer {
 
     private NewOrderSingle newOrder;
-    private FixClient fixClient;
+    private MessageSingleSubject messageSingleSubject;
+
+    private NewOrderCross newOrderCross;
+    private MessageCrossSubject messageCrossSubject;
 
     private SessionID sessionID;
 
-    public FixClientApplication(Observable fixClient) {
-        this.fixClient = (FixClient) fixClient;
-        this.fixClient.addObserver(this);
+    public FixClientApplication(Observable observable) {
+        if (observable instanceof MessageSingleSubject) {
+            this.messageSingleSubject = (MessageSingleSubject) observable;
+            this.messageSingleSubject.addObserver(this);
+        } else if (observable instanceof MessageCrossSubject) {
+            this.messageCrossSubject = (MessageCrossSubject) observable;
+            this.messageCrossSubject.addObserver(this);
+        }
+
     }
 
-    public void send(){
+    public void setMessageSingleSubject(MessageSingleSubject messageSingleSubject) {
+        this.messageSingleSubject = messageSingleSubject;
+        this.messageSingleSubject.addObserver(this);
+    }
+
+    public void setMessageCrossSubject(MessageCrossSubject messageCrossSubject) {
+        this.messageCrossSubject = messageCrossSubject;
+        this.messageCrossSubject.addObserver(this);
+    }
+
+    public void send() {
         System.err.println("send - sessionId:" + sessionID);
-        if(newOrder!=null && sessionID != null) {
+        if (newOrder != null && sessionID != null) {
             try {
                 Session.sendToTarget(newOrder, sessionID);
                 newOrder = null;
@@ -30,12 +50,25 @@ public class FixClientApplication implements Application, Observer {
         }
     }
 
+    public void sendCross() {
+        System.err.println("sendCross - sessionId:" + sessionID);
+        if (newOrderCross != null && sessionID != null) {
+            try {
+                Session.sendToTarget(newOrderCross, sessionID);
+                newOrderCross = null;
+            } catch (SessionNotFound sessionNotFound) {
+                sessionNotFound.printStackTrace();
+            }
+        }
+    }
+
+
     public void onCreate(SessionID sessionID) {
         System.err.println("onCreate - sessionId:" + sessionID);
     }
 
     public void onLogon(SessionID sessionID) {
-       this.sessionID = sessionID;
+        this.sessionID = sessionID;
     }
 
     public void onLogout(SessionID sessionID) {
@@ -65,10 +98,16 @@ public class FixClientApplication implements Application, Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        if(o instanceof FixClient){
-            FixClient fc = (FixClient) o;
-            this.newOrder = fc.getNewOrder();
+        if (o instanceof MessageSingleSubject) {
+            System.err.println("update - MessageSingleSubject:");
+            MessageSingleSubject mss = (MessageSingleSubject) o;
+            this.newOrder = mss.getNewOrder();
             send();
+        } else if (o instanceof MessageCrossSubject) {
+            System.err.println("update - MessageCrossSubject:");
+            MessageCrossSubject mcs = (MessageCrossSubject) o;
+            this.newOrderCross = mcs.getNewOrderCross();
+            sendCross();
         }
     }
 }
