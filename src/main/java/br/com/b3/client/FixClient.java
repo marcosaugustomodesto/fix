@@ -6,6 +6,7 @@ import quickfix.fix44.NewOrderCross;
 import quickfix.fix44.NewOrderSingle;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -25,6 +26,7 @@ public class FixClient extends Observable implements  ActionListener{
     private JRadioButton rbCross;
     private JButton btnSubmit;
     private Application app;
+    private DefaultTableModel dtm;
     public static void main(String[] args) throws Exception {
         new FixClient().init();
     }
@@ -55,7 +57,9 @@ public class FixClient extends Observable implements  ActionListener{
         frame.setSize(new Dimension(600,400));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
+        JPanel panelTable = new JPanel();
         panel.setLayout(new GridLayout(1,5,5,5));
+        panelTable.setLayout(new GridLayout(1,0,5,5));
         JLabel lblOrderId = new JLabel("OrderId:");
         txtOrderId = new JTextField();
         btnSubmit = new JButton("Submit");
@@ -73,7 +77,17 @@ public class FixClient extends Observable implements  ActionListener{
         panel.add(rbSingle,0, 2);
         panel.add(rbCross,0, 3);
         panel.add(btnSubmit,0,4);
+
+
+        String[] tblHead={"mensagem"};
+        dtm=new DefaultTableModel(tblHead,0);
+        JTable table=new JTable(dtm);
+        table.setSize(400,400);
+        JScrollPane scrollPane = new JScrollPane(table);
+        panelTable.add(scrollPane);
+
         frame.add(panel, BorderLayout.NORTH);
+        frame.add(panelTable, BorderLayout.CENTER);
 
         frame.setVisible(true);
 
@@ -88,6 +102,9 @@ public class FixClient extends Observable implements  ActionListener{
                     new TransactTime( LocalDateTime.now()),
                     new OrdType(OrdType.MARKET));
             mss.setNewOrder(newOrder);
+            String[] row = { newOrder.toString() };
+            dtm.addRow(row);
+
         } else if (rbCross.isSelected()){
             ((FixClientApplication) app).setMessageCrossSubject(mcs);
             NewOrderCross newOrderCross = new NewOrderCross(new CrossID(txtOrderId.getText()),
@@ -96,6 +113,9 @@ public class FixClient extends Observable implements  ActionListener{
                     new TransactTime(LocalDateTime.now()),
                     new OrdType(OrdType.MARKET));
             mcs.setNewOrderCross(newOrderCross);
+            String[] row = { newOrderCross.toString() };
+            dtm.addRow(row);
+
         }
     }
 
